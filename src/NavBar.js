@@ -3,16 +3,22 @@ import { Link } from "react-router-dom";
 
 function NavBar () {
   return (
-    <div className="Nav-bar">
-      <p>
-        <Link style={{paddingLeft: 13, textDecoration: 'none', color: 'white'}} to="/">Home</Link>
+    <div className="nav-bar">
+      <p className='link'>
+        <Link className='nav-bar-link' to="/">About</Link>
       </p>
-      <p>
-        <Link style={{paddingLeft: 13, textDecoration: 'none', color: 'white'}} to="/contact">Contact</Link>
+      <p className='link'>
+        <Link className='nav-bar-link' to="/work">Work</Link>
       </p>
-      <p>
-        <Link style={{paddingLeft: 13, textDecoration: 'none', color: 'white', paddingRight: 13}} to="/photos">Photos</Link>
+      <p className='link'>
+        <Link className='nav-bar-link' to="/contact">Contact</Link>
       </p>
+      <p className='link'>
+        <Link className='nav-bar-link' to="/personal">Personal</Link>
+      </p>
+      {/* <p>
+        <Link style={{paddingLeft: 13, textDecoration: 'none', color: 'rgb(246, 248, 140)', paddingRight: 13}} to="/photos">Photos</Link>
+      </p> */}
     </div>
   )
 }

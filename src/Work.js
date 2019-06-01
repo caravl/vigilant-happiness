@@ -1,14 +1,11 @@
 import React from 'react';
-import './Home.css';
 
-function Home() {
+export default function Work() {
   return (
     <div>
       <header>
-        <h1>Under Construction</h1>
+        <h1>My work</h1>
       </header>
     </div>
   );
 }
-
-export default Home;
